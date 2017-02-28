@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/alert_dark_frame"
+        android:id="@+id/MoviePoster_ImageView"
+        android:layout_weight="3"
+        android:adjustViewBounds="true"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/MovieInfo_LinearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:text="MovieTitle_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MovieTitle_TextView" />
+
+        <TextView
+            android:text="MovieRating_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MovieRating_TextView" />
+
+        <TextView
+            android:text="MoveCategories_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MoveCategories_TextView" />
+
+        <TextView
+            android:text="MovieYear_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MovieYear_TextView" />
+    </LinearLayout>
+
+</LinearLayout>
